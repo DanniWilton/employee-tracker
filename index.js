@@ -78,7 +78,7 @@ function add() {
                 type: 'list',
                 name: 'addContent',
                 message: 'What would you like to add?',
-                choices: ['Department', 'Employee', 'Role', 'back'],
+                choices: ['Department', 'Employee', 'Roles', 'back'],
             },
         ])
         .then((answer) => {
@@ -89,8 +89,8 @@ function add() {
                 case 'Employee':
                     addEmployee();
                     break;
-                case 'Role':
-                    addRole();
+                case 'Roles':
+                    addRoles();
                     break;
                 case 'back':
                     menu();
