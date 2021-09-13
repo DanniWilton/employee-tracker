@@ -2,7 +2,6 @@
 const mysql = require('mysql');
 const inquirer = require('inquirer');
 const { promisify } = require('util');
-const { allowedNodeEnvironmentFlags } = require('process');
 
 // create the connection to myselg params
 const connection = mysql.createConnection({
